@@ -104,3 +104,10 @@
 .strip{background:linear-gradient(90deg,#3b4a6b,#5b6b8f,#3b4a6b);background-size:100% 100%;animation:none;color:#c8d2ea}
 .strip::after{background:radial-gradient(circle at 4px 0,transparent 4px,#101828 4.5px) 0 0/8px 8px repeat-x}
 .qmark{font-size:118px;font-weight:200;line-height:1;color:#e8eefc;text-shadow:0 0 28px #60a5fa66;animation:xfloat 2.8s ease-in-out infinite}
+
+/* 파트 선택 시트: 목록이 접혀서 비어 보이는 문제 방지 */
+#pts .gsh{min-height:120px}
+#pts .ptl{flex:none;min-height:min-content;max-height:55vh;overflow-y:auto}
+#pts .pr{flex:none;width:100%;min-height:46px;color:var(--fg);background:transparent}
+#pts .pr span{color:var(--fg)}
+#pts .pr.on{background:var(--hl)}
